@@ -57,11 +57,12 @@ M98 P"/macros/drive/e_fullcurrent.g"
 
 ;; firmware retraction -------------------------------------
 
-;; Choose one as your default:
-M98 P"/macros/retraction/quiet_nozhop.g
-;M98 P"/macros/retraction/quiet_zhop.g
-;M98 P"/macros/retraction/pa_nozhop.g"
-;M98 P"/macros/retraction/pa_zhop.g"
+;; To support changing toolheads and firmware retraction profiles,
+;; the firmware retraction parameters are stored in
+;; /macros/retraction/*.g
+;; Running those scripts will write back to the /sys/restore_retraction.g file.
+;; We run that file on startup, which enables retraction selection to be maintained across reboots.
+M98 P"/sys/restore_retraction.g"
 
 
 ;; thermal -------------------------------------------------
@@ -98,9 +99,10 @@ M106 P2 T35:55 H100:101:102 B1.0 L0.2 C"Electronics"
 M106 P3 S0 C"Chamber"
 ;M106 P8 B0 L0 S0.2 C"Lights"
 
-;; M303 H1 S235 ; run autotune
-;; M500 to save autotune results to config-override.g, then move the heater config lines from config-override.g here (or to a tool heater config macro).
-;; (Delete them from config-override.g, or you will be confused when changing this file doesn't work.)
+;; Bed autotune
+;; M303 H0 S100
+;; Show parameters
+;; M307 H0
 M307 H0 A271.6 C790.8 D1.6 S1.00 V24.3 B0
 
 ;; To support changing toolheads, the tool heater parameters are stored in
