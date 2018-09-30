@@ -94,7 +94,7 @@ M305 P102 S"Duex Drivers"               ; name and enable display of Duex steppe
 
 M106 P0 S0 ; C"Part" ; don't name part fan or it will show up twice in the UI
 M106 P1 T40:70 H1:2 C"Tool"
-M106 P2 T45:65 H100:101:102 C"Electronics"
+M106 P2 T35:55 H100:101:102 B1.0 L0.2 C"Electronics"
 M106 P3 S0 C"Chamber"
 ;M106 P8 B0 L0 S0.2 C"Lights"
 
