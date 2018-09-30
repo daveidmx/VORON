@@ -44,8 +44,8 @@ M569 P8 S0      ; Z++ motor direction
 M569 P3 S0      ; E0 motor direction
 M569 P4 S0      ; E1 motor direction
 M569 P2 S0      ; E2 motor direction
-M84 S3600                           ; motor idle timeout
-M906 I50                            ; motor idle current percentage
+M84 S86400                          ; motor idle timeout
+M906 I0                             ; motor idle current percentage
 M350 X16 Y16 Z16 E16 I1             ; set microstepping
 M92 X80 Y80 Z400 E560               ; set microsteps per mm for 1.8-degree steppers
 
