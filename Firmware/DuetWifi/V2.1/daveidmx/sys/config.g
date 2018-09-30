@@ -103,8 +103,11 @@ M106 P3 S0 C"Chamber"
 ;; (Delete them from config-override.g, or you will be confused when changing this file doesn't work.)
 M307 H0 A271.6 C790.8 D1.6 S1.00 V24.3 B0
 
-M98 P"/macros/heating/toolhead_V6_copper_36W.g"
-;M98 P"/macros/heating/toolhead_Volcano_alu_36W.g"
+;; To support changing toolheads, the tool heater parameters are stored in
+;; /macros/heating/toolhead_*.g
+;; Running those scripts will write back to the /sys/restore_tool_heater.g file.
+;; We run that file on startup, which enables tool heater selection to be maintained across reboots.
+M98 P"/sys/restore_tool_heater.g"
 
 
 ;; tools ---------------------------------------------------
