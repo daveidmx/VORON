@@ -112,11 +112,11 @@ M98 P"/macros/heating/toolhead_V6_copper_36W.g"
 M563 P0 D0 H1       ; bind tool 0 to drive and heater
 G10 P0 X0 Y0 Z0     ; tool offset
 G10 P0 S0 R0        ; tool active and standby temp
-;M591 D0 P2 C3       ; filament detector
+;M591 D0 P2 C3 S1    ; filament detector
 
 ;M563 P1 D1 H2      ; bind tool 1 to drive and heater
 ;G10 P1 X0 Y0 Z0    ; tool offset
 ;G10 P1 S0 R0       ; tool active and standby temp
-;M591 D1 P2 C4      ; filament detector
+;M591 D1 P2 C4 S1    ; filament detector
 
 T0                  ; activate tool 0
