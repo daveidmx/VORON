@@ -75,6 +75,12 @@ M98 P"/sys/restore_retraction.g"
 ;; E3D thermistor
 ;;   R4700 T100000 B4725 C7.06E-8
 
+;; Sample thermistor values:
+;; China thermistor (TL, Keenovo, etc.)
+;;   R4700 T100000 B395
+;; E3D thermistor
+;;   R4700 T100000 B4725 C7.06E-8
+
 M305 P0 R4700 T100000 B3950             ; bed thermistor
 M143 H0 S120                            ; bed cutoff temp
 M570 H0 T10 S180                        ; heater fault timeout
