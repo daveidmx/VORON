@@ -99,6 +99,8 @@ M570 H1 T10 S120                        ; heater fault timeout
 M305 P101 S"Duet Drivers"               ; name and enable display of Duet stepper drivers
 M305 P102 S"Duex Drivers"               ; name and enable display of Duex stepper drivers
 
+M305 P4 R4700 T100000 B3950 S"Heatbreak"    ; heatbreak thermistor
+
 M106 P0 S0 ; C"Part" ; don't name part fan or it will show up twice in the UI
 M106 P1 T40:70 H1:2 C"Tool"
 M106 P2 T35:55 H100:101:102 B1.0 L0.2 C"Electronics"
