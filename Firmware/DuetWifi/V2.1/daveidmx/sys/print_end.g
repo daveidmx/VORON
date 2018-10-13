@@ -10,6 +10,8 @@ M144                    ; set bed to standby
 M107                    ; fan off
 M106 P3 S0.5            ; enclosure fan on
 
+M98 P"/macros/drive/e_off.g"
+
 ;; Option 1: Turn off tool heaters
 G10 P0 R-273.15 S-273.15
 G10 P1 R-273.15 S-273.15
