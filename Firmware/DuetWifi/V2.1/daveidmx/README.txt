@@ -47,3 +47,5 @@ Changes:
 * Make toolhead heater and firmware retraction profile selections sticky across reboots to support changing toolheads.
 * Add retraction profiles for Volcano.
 * Increased motor default idle timeout to 24 hours.
+
+* IMPORTANT: Changed origin coordinates to be at bed center.
