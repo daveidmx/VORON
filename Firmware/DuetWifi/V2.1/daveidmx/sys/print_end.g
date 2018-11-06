@@ -8,7 +8,7 @@ M140 R45                ; set bed standby temperature to magic PEI part removal 
 M144                    ; set bed to standby
 
 M107                    ; fan off
-M106 P3 S0.5            ; enclosure fan on
+M106 P3 S1.0            ; enclosure fan on
 
 M98 P"/macros/drive/e_off.g"
 
