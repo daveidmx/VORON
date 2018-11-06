@@ -85,7 +85,9 @@ M305 P0 R4700 T100000 B3950             ; bed thermistor
 M143 H0 S120                            ; bed cutoff temp
 M570 H0 T10 S180                        ; heater fault timeout
 
-M305 P1 R4700 T100000 B4725 C7.06E-8    ; tool 0 thermistor
+; NOTE: tool thermistor M305 is now specified by the tool heater script
+;M305 P1 R4700 T100000 B4725 C7.06E-8    ; tool 0 thermistor
+;M305 P1 R4700 T100000 B3950             ; tool 0 thermistor
 M143 H1 S280                            ; tool 0 temp cutoff
 M570 H1 T10 S120                        ; heater fault timeout
 
