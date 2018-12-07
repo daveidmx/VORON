@@ -19,5 +19,5 @@
 ;; *ADJUST* this file for:
 ;;  Your inductive probe pins ("M558 P*")
 
-M558 P5 I1 H10 R0.1 F1800 T99999 A1 B1
+M558 P5 I1 H10 R0.1 F1800 T99999 A1 B0
 G31 P1000 X0 Y25 Z0
